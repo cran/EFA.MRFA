@@ -1,4 +1,4 @@
-4f7512eebbbc08315ea6cd9497aa8a4c *DESCRIPTION
+7575f995801b51b9407d34f4648e3328 *DESCRIPTION
 c94c990cb9bedad831f0f7ce72ad5658 *NAMESPACE
 d253339e9e63b8256e3c06c1c0dd1ac9 *R/GreaterLowerBound.R
 cd8a11633d17465176d2b4e19f592df2 *R/LineCon.R
@@ -12,13 +12,13 @@ b7baaad26436c1638bd6a510d8e2d2cc *R/eigenc.R
 19dc9fd14ada773e46ecfc123d18b344 *R/mrfa.R
 e52d6bb487ea1192883c4e0049b3f0da *R/mrfa_s.R
 c8f97f6f3a1d6a86cbfc21824772aaea *R/nrm.R
-f32ef371b6bcee2bfbb728fd5048ccd5 *R/parallelMRFA.R
+cdc351939a978a3f2976d40dc0678adc *R/parallelMRFA.R
 054714004420582a332d192cc71d5fdc *R/sr.R
 ca309f06ff0259d1301235315ed351e0 *R/testme.R
 510a8509262fa0c03f885a405630475a *R/tri.R
 01c35ada48d005fc39effd3b11820e32 *data/IDAQ.rda
 4b91bda12aed37371abdd000972ef0d9 *man/EFA.MRFA-internal.Rd
-6c569192f1aefd5cecb105e5a72f4506 *man/EFA.MRFA-package.Rd
+9e3acda04153b31753c76ccc2f442321 *man/EFA.MRFA-package.Rd
 3ddf6df9a708ed05821961692edcdfc6 *man/GreaterLowerBound.Rd
 186652942c4c57fcd1ba6525e466e54b *man/IDAQ.Rd
 18f389f75c350ee5f6f88f8be2b1c66a *man/hullEFA.Rd

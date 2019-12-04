@@ -88,7 +88,7 @@ parallelMRFA<-function(X, Ndatsets = 500, percent = 95, corr = "Pearson", displa
   }
   else if (corr==2){
     #Polychoric matrix
-    R<-(psych::polychoric(X))$rho
+    R<-(psych::polychoric(X, correct = FALSE))$rho
   }
 
   #check adequacy of the matrix (determinant, Bartlett & KMO)
@@ -169,7 +169,7 @@ parallelMRFA<-function(X, Ndatsets = 500, percent = 95, corr = "Pearson", displa
     }
     else if (corr==2){
       #polychoric matrix
-      Ri<-(psych::polychoric(Xi,correct = 0))$rho
+      Ri<-(psych::polychoric(Xi,correct = FALSE))$rho
     }
 
     D<-eigen(Ri)$values

@@ -21,7 +21,7 @@ Devlin, S. J., Gnanadesikan, R., & Kettenring, J. R. (1981). Robust estimation o
 
 Lorenzo-Seva, U., Timmerman, M. E., & Kiers, H. A. (2011). The Hull Method for Selecting the Number of Common Factors. Multivariate Behavioral Research, 46(2), 340-364. \url{https://doi.org/10.1080/00273171.2011.564527}
 
-ten Berge, J. M. F., & Kiers, H. A. L. (1991). A numerical approach to the approximate and the exact minimum rank of a covariance matrix. Psychometrika, 56(2), 309–315. \url{http://doi.org/10.1007/BF02294464}
+ten Berge, J. M. F., & Kiers, H. A. L. (1991). A numerical approach to the approximate and the exact minimum rank of a covariance matrix. Psychometrika, 56(2), 309-315. \url{http://doi.org/10.1007/BF02294464}
 
 Ten Berge, J.M.F., Snijders, T.A.B. & Zegers, F.E. (1981). Computational aspects of the greatest lower bound to reliability and constrained minimum trace factor analysis. Psychometrika, 46, 201-213.
 

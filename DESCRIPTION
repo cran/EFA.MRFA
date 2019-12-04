@@ -1,8 +1,8 @@
 Package: EFA.MRFA
 Type: Package
 Title: Dimensionality Assessment Using Minimum Rank Factor Analysis
-Version: 1.0.5
-Date: 2019-06-14
+Version: 1.0.6
+Date: 2019-12-04
 Author: David Navarro-Gonzalez, Urbano Lorenzo-Seva
 Maintainer: David Navarro-Gonzalez <david.navarro@urv.cat>
 Description: Performs parallel analysis (Timmerman & Lorenzo-Seva, 2011 
@@ -19,6 +19,6 @@ Encoding: UTF-8
 NeedsCompilation: no
 LazyData: true
 RoxygenNote: 6.0.1
-Packaged: 2019-06-14 09:05:40 UTC; dng
+Packaged: 2019-12-04 12:00:51 UTC; 39928973-F
 Repository: CRAN
-Date/Publication: 2019-06-14 10:50:03 UTC
+Date/Publication: 2019-12-04 12:20:05 UTC
