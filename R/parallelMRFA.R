@@ -130,21 +130,23 @@ parallelMRFA<-function(X, Ndatsets = 500, percent = 95, corr = "Pearson", displa
   evals<-array(0,dim=c(0,0))
   evals_p<-a<-array(0,dim=c(0,0))
 
+  ptm_one <- proc.time()
+
   for (a in 1:Ndatsets){
 
-    if (display==TRUE){
-
-      if (a==1){
-        #calculate the time elapsed for computing the first one for estimating the total elapsed time
-        ptm_one <- proc.time()
-      }
-
-      if (a==2){
-        #waitbar
-        cat('Computing Parallel Analysis: Please wait \n')
-        pb <- txtProgressBar(min = 0, max = Ndatsets-1, style = 3)
-      }
-    }
+    # if (display==TRUE){
+    #
+    #   if (a==1){
+    #     #calculate the time elapsed for computing the first one for estimating the total elapsed time
+    #     ptm_one <- proc.time()
+    #   }
+    #
+    #   if (a==2){
+    #     #waitbar
+    #     cat('Computing Parallel Analysis: Please wait \n')
+    #     pb <- txtProgressBar(min = 0, max = Ndatsets-1, style = 3)
+    #   }
+    # }
 
     Xi=optimbase::zeros(N,m)
 
@@ -197,43 +199,85 @@ parallelMRFA<-function(X, Ndatsets = 500, percent = 95, corr = "Pearson", displa
 
     if (display==TRUE){
 
-      if (a==1){
-        time.taken.mrfa <- proc.time() - ptm_one
+      compT <- proc.time() - ptm_one
+      compT<-compT[3]
+      compT<-compT*(Ndatsets-a)/a
 
-        time.taken.mrfa<-time.taken.mrfa[3]
+      secondsInAMinute = 60
+      secondsInAnHour = 60 * secondsInAMinute
+      secondsInADay = 24 * secondsInAnHour
 
-        et.seconds<-time.taken.mrfa*Ndatsets
+      days <- floor(compT / secondsInADay)
 
+      hourSeconds <- compT %% secondsInADay
+      hours <- floor(hourSeconds / secondsInAnHour)
 
-        if (corr==1){
-          et.minutes<-(et.seconds/60)*1.8
+      minuteSeconds <- hourSeconds %% secondsInAnHour
+      minutes <- floor(minuteSeconds / secondsInAMinute)
+
+      remainingSeconds <- minuteSeconds %% secondsInAMinute
+      seconds <- ceiling(remainingSeconds)
+
+      if (compT > 3600){
+        if (days >= 1){ #Very very rare, but just to be sure
+          cat("Computing PA. Time remaining: +24 hours                                                     \r")
+          flush.console()
         }
         else {
-          et.minutes<-et.seconds/60
+          cat("Computing PA. Time remaining: ", hours,"hours, ",minutes, "minutes and ",seconds, "seconds \r")
+          flush.console()
         }
-
-        if (et.minutes<=1){
-          cat('Estimated time for the analysis: less than a minute')
-        }
-        if (et.minutes>1 && et.minutes<=1.5) {
-          cat(sprintf('Estimated time for the analysis: %3.0f minute',round(et.minutes)))
-        }
-        if (et.minutes>1.5) {
-          cat(sprintf('Estimated time for the analysis: %3.0f minutes',round(et.minutes)))
-        }
-
-        cat('\n\n')
       }
       else{
-        Sys.sleep(0.1)
-        # update progress bar
-        setTxtProgressBar(pb, a-1)
+        if (compT >= 60){
+          cat("Computing PA. Time remaining: ", minutes, "minutes and ",seconds,"seconds \r")
+          flush.console()
+        }
+        if (compT < 60) {
+          cat("Computing PA. Time remaining ",seconds,"seconds                                                                  \r")
+          flush.console()
+        }
       }
-    }
+
+      #if (a==1){
+      #   time.taken.mrfa <- proc.time() - ptm_one
+      #
+      #   time.taken.mrfa<-time.taken.mrfa[3]
+      #
+      #   et.seconds<-time.taken.mrfa*Ndatsets
+      #
+      #
+      #   if (corr==1){
+      #     et.minutes<-(et.seconds/60)*1.8
+      #   }
+      #   else {
+      #     et.minutes<-et.seconds/60
+      #   }
+      #
+      #   if (et.minutes<=1){
+      #     cat('Estimated time for the analysis: less than a minute')
+      #   }
+      #   if (et.minutes>1 && et.minutes<=1.5) {
+      #     cat(sprintf('Estimated time for the analysis: %3.0f minute',round(et.minutes)))
+      #   }
+      #   if (et.minutes>1.5) {
+      #     cat(sprintf('Estimated time for the analysis: %3.0f minutes',round(et.minutes)))
+      #   }
+      #
+      #   cat('\n\n')
+      # }
+      # else{
+      #   Sys.sleep(0.1)
+      #   # update progress bar
+      #   setTxtProgressBar(pb, a-1)
+      # }
+      }
 
   }
   if (display==TRUE){
-    close(pb)
+    cat("\r","                                                                                                  ","\r")
+
+    # close(pb)
   }
 
   evals<-matrix(evals,m)
@@ -437,7 +481,7 @@ parallelMRFA<-function(X, Ndatsets = 500, percent = 95, corr = "Pearson", displa
       cat('WARNING: The matrix is not suitable for performing factor analysis (KMO <0.7)\n\n')
     }
 
-    cat(sprintf('Computing time: %s \n\n',total_time))
+    #cat(sprintf('Computing time: %s \n\n',total_time))
 
     invisible(OUT)
   }
