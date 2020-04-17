@@ -187,13 +187,13 @@ ml77 <- function(S,m,conv){
       if (m>1){
         for (i in 1:m){
           k <- t(b[,i]) %*% solve(S) %*% b[,i]
-          u <- sqrt(d[i]/k) * b[,i]
+          u <- as.vector(sqrt(d[i]/k)) * b[,i]
           L <- cbind(L,u)
         }
       }
       else {
         k <- t(b) %*% solve(S) %*% b
-        u <- sqrt(d/k) * b
+        u <- as.vector(sqrt(d/k)) * b
         L <- cbind(L,u)
       }
     }

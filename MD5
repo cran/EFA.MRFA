@@ -1,4 +1,4 @@
-644b22fd77c515db4fa1d6fadfc06e5c *DESCRIPTION
+dd59ad64a92769cda6287ce49a631259 *DESCRIPTION
 18428763a8ada25c189cfb4fc070b957 *NAMESPACE
 d253339e9e63b8256e3c06c1c0dd1ac9 *R/GreaterLowerBound.R
 cd8a11633d17465176d2b4e19f592df2 *R/LineCon.R
@@ -7,14 +7,14 @@ b7baaad26436c1638bd6a510d8e2d2cc *R/eigenc.R
 8acd7d1bcf2747ab88bc01a870da75bf *R/eigend.R
 8f2a492785dc5f10f8d9601e96ddf37a *R/fitchi.R
 6d9911167d96f859a4fadcade62a3b7a *R/fitchi_zero.R
-03309076b0cbda0e6a73baf62210d495 *R/hullEFA.R
-8b294a95392dceadacad35f2746bc9ac *R/ml77.R
+b394b7af79cbdf27c3aa7325f91bb01c *R/hullEFA.R
+dac7cccafb3cc6d18c9577777a573c18 *R/ml77.R
 19dc9fd14ada773e46ecfc123d18b344 *R/mrfa.R
 e52d6bb487ea1192883c4e0049b3f0da *R/mrfa_s.R
 c8f97f6f3a1d6a86cbfc21824772aaea *R/nrm.R
 aecfee6a9e5cef924641dc015705ab9d *R/parallelMRFA.R
 054714004420582a332d192cc71d5fdc *R/sr.R
-ca309f06ff0259d1301235315ed351e0 *R/testme.R
+a271d3f5a57e5488fb3c8cac4b74dd4f *R/testme.R
 510a8509262fa0c03f885a405630475a *R/tri.R
 01c35ada48d005fc39effd3b11820e32 *data/IDAQ.rda
 4b91bda12aed37371abdd000972ef0d9 *man/EFA.MRFA-internal.Rd

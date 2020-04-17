@@ -255,8 +255,15 @@ hullEFA <- function(X, maxQ, extr = "ULS", index_hull = "CAF",  display = TRUE, 
         }
       }
       else {
-        if (max(out_best[,2]) < out[i,2]){
-          out_best <- rbind(out_best, out[i,])
+        if( size(out_best)[1] == 1){ #fix 17/4/2020
+          if ((out_best[2]) < out[i,2]){
+            out_best <- rbind(out_best, out[i,])
+          }
+        }
+        else {
+          if (max(out_best[,2]) < out[i,2]){
+            out_best <- rbind(out_best, out[i,])
+          }
         }
       }
     }

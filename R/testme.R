@@ -16,7 +16,7 @@ testme<-function(example = FALSE){
 
   #Parallel Anallysis
   if (example == FALSE){
-  out_PA<-parallelMRFA(X=IDAQ, display = 0, graph = T)
+    out_PA<-parallelMRFA(X=IDAQ, display = F, graph = T)
   }
   else {
     out_PA<-parallelMRFA(X=IDAQ,Ndatsets = 5, display = 0, graph = T)
