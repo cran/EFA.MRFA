@@ -57,9 +57,9 @@ In the Lorenzo-Seva, Timmerman, & Kiers (2011) simulation study, the Hull method
   \item{n_factors}{Number of advised dimensions by the selected index.}
 }
 \references{
-Lorenzo-Seva, U., Timmerman, M. E., & Kiers, H. A. (2011). The Hull Method for Selecting the Number of Common Factors. Multivariate Behavioral Research, 46(2), 340-364. \url{https://doi.org/10.1080/00273171.2011.564527}
+Lorenzo-Seva, U., Timmerman, M. E., & Kiers, H. A. (2011). The Hull Method for Selecting the Number of Common Factors. Multivariate Behavioral Research, 46(2), 340-364. \doi{10.1080/00273171.2011.564527}
 
-Ceulemans, E., & Kiers, H. A. L. (2006). Selecting among three-mode principal component models of different types and complexities: A numerical convex hull based method. British Journal of Mathematical and Statistical Psychology, 59: 133–150. \url{https://doi.org/10.1348/000711005X64817}
+Ceulemans, E., & Kiers, H. A. L. (2006). Selecting among three-mode principal component models of different types and complexities: A numerical convex hull based method. British Journal of Mathematical and Statistical Psychology, 59: 133–150. \doi{10.1348/000711005X64817}
 }
 \author{
 David Navarro-Gonzalez

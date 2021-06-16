@@ -1,6 +1,4 @@
 exportPattern("^[[:alpha:]]+")
-importFrom("optimbase","transpose")
-importFrom("optimbase","size")
 importFrom("grDevices", "rainbow")
 importFrom("graphics", "abline", "axis", "grid", "legend", "lines","plot", "title")
 importFrom("stats", "cor", "rnorm", "runif")

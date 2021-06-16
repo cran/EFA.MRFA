@@ -46,13 +46,13 @@ If the matrix to analyze is not positive-defined, a smoothering procedure will b
 \item{Number_factors_percentiles}{The number of factors to be retained suggested comparing the real data with the percentile of distribution of the random data}
 }
 \references{
-Buja, A., & Eyuboglu, N. (1992). Remarks on Parallel Analysis. Multivariate Behavioral Research, 27(4), 509-540. \url{http://doi.org/10.1207/s15327906mbr2704_2}
+Buja, A., & Eyuboglu, N. (1992). Remarks on Parallel Analysis. Multivariate Behavioral Research, 27(4), 509-540. \doi{10.1207/s15327906mbr2704_2}
 
-Devlin, S. J., Gnanadesikan, R., & Kettenring, J. R. (1981). Robust estimation of dispersion matrices and principal components. Journal of the American Statistical Association, 76, 354-362. \url{http://doi.org/10.1080/01621459.1981.10477654}
+Devlin, S. J., Gnanadesikan, R., & Kettenring, J. R. (1981). Robust estimation of dispersion matrices and principal components. Journal of the American Statistical Association, 76, 354-362. \doi{10.1080/01621459.1981.10477654}
 
-ten Berge, J. M. F., & Kiers, H. A. L. (1991). A numerical approach to the approximate and the exact minimum rank of a covariance matrix. Psychometrika, 56(2), 309–315. \url{http://doi.org/10.1007/BF02294464}
+ten Berge, J. M. F., & Kiers, H. A. L. (1991). A numerical approach to the approximate and the exact minimum rank of a covariance matrix. Psychometrika, 56(2), 309–315. \doi{10.1007/BF02294464}
 
-Timmerman, M. E., & Lorenzo-Seva, U. (2011). Dimensionality assessment of ordered polytomous items with parallel analysis. Psychological Methods, 16(2), 209-220. \url{http://doi.org/10.1037/a0023353}
+Timmerman, M. E., & Lorenzo-Seva, U. (2011). Dimensionality assessment of ordered polytomous items with parallel analysis. Psychological Methods, 16(2), 209-220. \doi{10.1037/a0023353}
 }
 \author{
 David Navarro-Gonzalez

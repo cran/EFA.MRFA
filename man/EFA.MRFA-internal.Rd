@@ -11,6 +11,8 @@
 \alias{fitchi_zero}
 \alias{ml77}
 \alias{tri}
+\alias{size}
+\alias{transpose}
 \title{
 EFA.MRFA-internal
 }
@@ -29,6 +31,8 @@ fitchi
 fitchi_zero
 ml77
 tri
+size
+transpose
 }
 \author{
 David Navarro-Gonzalez

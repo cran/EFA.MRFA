@@ -20,7 +20,7 @@ More information about the questionnaire can be found at:
 \url{http://psico.fcep.urv.cat/tests/idaq/en/descripcion.html}
 }
 \references{
-Ruiz-Pamies, M., Lorenzo-Seva, U., Morales-Vives, F., Cosi, S., & Vigil-Colet, A. (2014). I-DAQ: a new test to assess direct and indirect aggression free of response bias. The Spanish Journal of Psychology, 17, E41. \url{http://doi.org/10.1017/sjp.2014.43}
+Ruiz-Pamies, M., Lorenzo-Seva, U., Morales-Vives, F., Cosi, S., & Vigil-Colet, A. (2014). I-DAQ: a new test to assess direct and indirect aggression free of response bias. The Spanish Journal of Psychology, 17, E41. \doi{10.1017/sjp.2014.43}
 }
 \examples{
 data(IDAQ)

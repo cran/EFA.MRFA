@@ -14,18 +14,17 @@ For more information about the methods used in each function, please go to each 
 \item{\code{\link{hullEFA}}}{Performs Hull analysis for assessing the number of factors to retain.}
 \item{\code{\link{mrfa}}}{Performs Minimum Rank Factor Analysis (MRFA) procedure.}
 \item{\code{\link{GreaterLowerBound}}}{Estimates the communalities of the variables from a factor model.}
-\item{\code{\link{testme}}}{An auto-executable script for testing the functions included in DA.MRFA.}
 }
 \references{
-Devlin, S. J., Gnanadesikan, R., & Kettenring, J. R. (1981). Robust estimation of dispersion matrices and principal components. Journal of the American Statistical Association, 76, 354-362. \url{http://doi.org/10.1080/01621459.1981.10477654}
+Devlin, S. J., Gnanadesikan, R., & Kettenring, J. R. (1981). Robust estimation of dispersion matrices and principal components. Journal of the American Statistical Association, 76, 354-362. \doi{10.1080/01621459.1981.10477654}
 
-Lorenzo-Seva, U., Timmerman, M. E., & Kiers, H. A. (2011). The Hull Method for Selecting the Number of Common Factors. Multivariate Behavioral Research, 46(2), 340-364. \url{https://doi.org/10.1080/00273171.2011.564527}
+Lorenzo-Seva, U., Timmerman, M. E., & Kiers, H. A. (2011). The Hull Method for Selecting the Number of Common Factors. Multivariate Behavioral Research, 46(2), 340-364. \doi{10.1080/00273171.2011.564527}
 
-ten Berge, J. M. F., & Kiers, H. A. L. (1991). A numerical approach to the approximate and the exact minimum rank of a covariance matrix. Psychometrika, 56(2), 309-315. \url{http://doi.org/10.1007/BF02294464}
+ten Berge, J. M. F., & Kiers, H. A. L. (1991). A numerical approach to the approximate and the exact minimum rank of a covariance matrix. Psychometrika, 56(2), 309-315. \doi{10.1007/BF02294464}
 
 Ten Berge, J.M.F., Snijders, T.A.B. & Zegers, F.E. (1981). Computational aspects of the greatest lower bound to reliability and constrained minimum trace factor analysis. Psychometrika, 46, 201-213.
 
-Timmerman, M. E., & Lorenzo-Seva, U. (2011). Dimensionality assessment of ordered polytomous items with parallel analysis. Psychological Methods, 16(2), 209-220. \url{http://doi.org/10.1037/a0023353}
+Timmerman, M. E., & Lorenzo-Seva, U. (2011). Dimensionality assessment of ordered polytomous items with parallel analysis. Psychological Methods, 16(2), 209-220. \doi{10.1037/a0023353}
 }
 \author{
 David Navarro-Gonzalez
@@ -33,10 +32,20 @@ David Navarro-Gonzalez
 Urbano Lorenzo-Seva
 }
 \examples{
-## Each man page contains examples of each function. For a fast global example use
-testme(example = TRUE)
+## Example 1:
+
+## perform a Parallel Analysis using an example Database with only 5 random data sets and
+## using the 90th percentile of distribution of the random data
+parallelMRFA(IDAQ, Ndatsets=5, percent=90)
 
 ## For speeding purposes, the number of datasets have been largely reduced. For a proper
-## use of testme, use it without the "example" argument or using example=FALSE.
+## use of parallelMRFA, we recommend to use the default Ndatsets value (Ndatsets=500)
+
+#Example 2:
+
+## Perform the Hull method defining the maximum number of dimensions to be tested by the
+## Parallel Analysis + 1 rule, with Maximum Likelihood factor extraction method and CAF
+## as Hull index.
+hullEFA(IDAQ, extr = "ML")
 }
 \keyword{ package }

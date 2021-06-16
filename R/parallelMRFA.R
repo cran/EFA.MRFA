@@ -148,7 +148,7 @@ parallelMRFA<-function(X, Ndatsets = 500, percent = 95, corr = "Pearson", displa
     #   }
     # }
 
-    Xi=optimbase::zeros(N,m)
+    Xi=matrix(0,N,m)
 
     buff<-matrix(runif((N*m), min=0, max=1),N)
     buff2<-matrix(apply(buff,2,sort),N)

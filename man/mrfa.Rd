@@ -40,7 +40,7 @@ Determines if the possible warnings occurred during the computation will be prin
   \item{gam}{Optimal communalities for each variable}
 }
 \references{
-ten Berge, J. M. F., & Kiers, H. A. L. (1991). A numerical approach to the approximate and the exact minimum rank of a covariance matrix. Psychometrika, 56(2), 309-315. \url{http://doi.org/10.1007/BF02294464}
+ten Berge, J. M. F., & Kiers, H. A. L. (1991). A numerical approach to the approximate and the exact minimum rank of a covariance matrix. Psychometrika, 56(2), 309-315. \doi{10.1007/BF02294464}
 }
 \author{
 David Navarro-Gonzalez
